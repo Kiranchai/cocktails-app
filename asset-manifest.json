@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cocktails-app/static/css/main.1029c493.css",
+    "main.js": "/cocktails-app/static/js/main.ab0b357c.js",
+    "index.html": "/cocktails-app/index.html",
+    "main.1029c493.css.map": "/cocktails-app/static/css/main.1029c493.css.map",
+    "main.ab0b357c.js.map": "/cocktails-app/static/js/main.ab0b357c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1029c493.css",
+    "static/js/main.ab0b357c.js"
+  ]
+}
