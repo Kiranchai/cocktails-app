@@ -57,7 +57,7 @@ const Drink = () => {
               />
             </div>
             <div className="drink-desc">
-              <h2 className="drink-name">Drink {drinkData.strDrink}</h2>
+              <h2 className="drink-name">{drinkData.strDrink}</h2>
               <div className="ingredients-container">
                 <h3>Ingredients: </h3>
                 {recipeItems.map((item) => {
