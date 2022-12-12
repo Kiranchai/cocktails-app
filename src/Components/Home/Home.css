@@ -45,6 +45,22 @@
     padding: 3rem .5rem;
 }
 
+.random-btn{
+    text-decoration: none;
+    color: rgb(200, 228, 255);
+    font-size: 1.25rem;
+    background-color: rgb(61, 90, 133);
+    padding: .75rem 1rem;
+    border-radius: .75rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border: none;
+}
+
+.random-btn:hover{
+    background-color: rgb(82, 121, 179);
+}
+
 @media only screen and (max-width: 650px) {
     .home-main{
         grid-template-columns: 1fr 1fr;

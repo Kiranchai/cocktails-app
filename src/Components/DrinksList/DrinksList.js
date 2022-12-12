@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import DrinkListItem from "./DrinkListItem";
 import "./DrinkList.css";
+import { CircularProgress } from "@mui/material";
 
 const DrinksList = () => {
   const { categoryName } = useParams();
@@ -37,18 +38,23 @@ const DrinksList = () => {
           })
           .join(" ")}
       </h3>
-      <div className="drinks-list-container">
-        {drinks.map((drink) => {
-          return (
-            <DrinkListItem
-              key={drink.idDrink}
-              drinkId={drink.idDrink}
-              drinkThumbnail={drink.strDrinkThumb}
-              drinkName={drink.strDrink}
-            />
-          );
-        })}
-      </div>
+
+      {drinks.length === 0 ? (
+        <CircularProgress style={{ color: "white" }} />
+      ) : (
+        <div className="drinks-list-container">
+          {drinks.map((drink) => {
+            return (
+              <DrinkListItem
+                key={drink.idDrink}
+                drinkId={drink.idDrink}
+                drinkThumbnail={drink.strDrinkThumb}
+                drinkName={drink.strDrink}
+              />
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };
